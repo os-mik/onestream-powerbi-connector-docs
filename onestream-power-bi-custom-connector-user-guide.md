@@ -1,9 +1,3 @@
----
-title: Power Query OneStream connector
-description: Provides basic information, prerequisites, and instructions on how to connect to your OneStream data.
-author: Michele Roscelli
----
-
 # OneStream
 
 > [!NOTE]
