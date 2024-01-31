@@ -62,12 +62,12 @@ The OneStream Connector enables secure access to your OneStream applications. Wi
 
 After successful login, OneStream Connector will show the navigator with 4 types of calls available:
 
-* Get Cube
-* Get Custom Adapter
-* Get Dimension
-* Get Member Properties
+* [Get Cube](#get-cube)
+* [Get Custom Adapter](#get-custom-adapter)
+* [Get Dimension](#get-dimension-and-get-member-properties)
+* [Get Member Properties](#get-dimension-and-get-member-properties)
 
-See below for an explanation of the different functions, and after selecting the function you want to use, follow through to [load the data](#load-data)
+Refer to the [Best Practices](#best-practices-and-functions-help)Best Practices links above if you need help configuring the functions.</br>After selecting the function you want to use, follow through to [load the data](#load-data)
 
 ### Load Data
 
@@ -121,7 +121,7 @@ generated](./media/onestream-power-bi-custom-connector-user-guide/image20.png)
 ![Graphical user interface, application Description automatically
 generated](./media/onestream-power-bi-custom-connector-user-guide/image21.png)
 
-## Best Practices & Functions Detail
+## Best Practices and Functions Help
 
 ### General Best Practices
 
@@ -148,7 +148,7 @@ This function retrieves data from a OneStream Cube.
 * Refer to a configured dashboard adapter inside OneStreame to make sure you are inserting the right values.
 ![Get Adapter](./media/onestream-power-bi-custom-connector-user-guide/image16.png)
 
-### Get Dimension | Get Member Properties
+### Get Dimension and Get Member Properties
 
 * Specify the OneStream Dimension Type you want to retrieve.
 * Specify the Scenario Type. Use Default or All to use the selected cube default dimensions and retrieve the default properties.
