@@ -67,7 +67,7 @@ After successful login, OneStream Connector will show the navigator with 4 types
 * [Get Dimension](#get-dimension-and-get-member-properties)
 * [Get Member Properties](#get-dimension-and-get-member-properties)
 
-Refer to the [Best Practices](#best-practices-and-functions-help)Best Practices links above if you need help configuring the functions.</br>After selecting the function you want to use, follow through to [load the data](#load-data)
+Refer to the [Best Practices](#best-practices-and-functions-help) links above if you need help configuring the functions.</br>After selecting the function you want to use, follow through to [load the data](#load-data)
 
 ### Load Data
 
