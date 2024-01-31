@@ -30,10 +30,10 @@ The OneStream Connector enables secure access to your OneStream applications. Wi
 ### Get Data
 
 1. Open Power BI Desktop and select "Get Data"
-![Get Data](./media/onestream-power-bi-custom-connector-user-guide/image10.png)
+![Get Data](./media/onestream/pbi-get-data.png)
 
 2. Type "OneStream" in the search box to find the custom OneStream connector.
-![OneStream Connector](./media/onestream-power-bi-custom-connector-user-guide/image11.png)
+![OneStream Connector](./media/onestream/os-connecetor-search.png)
 
 3. Select **OneStream**
 
@@ -42,7 +42,7 @@ The OneStream Connector enables secure access to your OneStream applications. Wi
 ### Configure the Connector
 
 1. Enter your OneStream environment URL. Ensure that the Environment URL is entered with a leading **https://** (as shown in the screenshot below), otherwise, connection attempts will not work properly.
-![Connector configuration](./media/onestream-power-bi-custom-connector-user-guide/image12.png)
+![Connector configuration](./media/onestream/os-connector-config.png)
 
 2. Click OK.
 
@@ -53,14 +53,15 @@ The OneStream Connector enables secure access to your OneStream applications. Wi
 2. It will redirect and open OneStream Identity Server on your default browser for login.
 
 3. Log in to your OneStream Account.
-![OIS Login](./media/onestream-power-bi-custom-connector-user-guide/image13.png)
+![OIS Login](./media/onestream/os-connector-login.png)
 
 4. After successful login click on "Connect"
-![Connect](./media/onestream-power-bi-custom-connector-user-guide/image14.png)
+![Connect](./media/onestream/os-connector-connect.png)
 
 ### OneStream Navigator
 
 After successful login, OneStream Connector will show the navigator with 4 types of calls available:
+![Sample function](./media/onestream/os-connector-get-dimension.png)
 
 * [Get Cube](#get-cube)
 * [Get Custom Adapter](#get-custom-adapter)
@@ -91,35 +92,20 @@ OneStream Connector performs all APIs calls under the permission boundary of cur
 > [!NOTE]
 > Connector only uses READ scopes on behalf of Power BI report user to perform all operations. OneStream connector cannot perform any update operation.
 
-OneStream connector has a limitation of 2.000.000 rows per call. Executing a query over this limit will trigger an error.
+OneStream Connector has a limitation of 2 million rows per call. Executing a query over this limit will trigger an error.
 
 ### Publish Power BI Reports to Power BI Service
 
-* Click on the "Publish" button from Power BI Desktop to publish data,
-    reports, and data model to the cloud-based Power BI Service.
+* Click on the "Publish" button from Power BI Desktop to publish data, reports, and data model to the cloud-based Power BI Service.
 
 * Choose the appropriate Power BI workspace and click "Select"
+![Select Workspace for publication](./media/onestream/pbi-publish.png)
 
-![Graphical user interface Description automatically generated with
-medium confidence](./media/onestream-power-bi-custom-connector-user-guide/image19.png)
+* After a successful publication, we will see a "Success" message with a link to navigate to the Power BI Service.
+![Successfully published model](./media/onestream/pbi-publish-success.png)
 
-* After a successful publication, we will see a "Success" message with
-    a link to navigate to the Power BI Service
-
-![Graphical user interface, text, application Description automatically
-generated](./media/onestream-power-bi-custom-connector-user-guide/image20.png)
-
-* Click on the link to view all reports from the Power BI Desktop in
-    the Power BI Service as well as create dashboards in the Power BI
-    Service.
-
-* From the Power BI Service workspace, user will receive error when
-    chick on "Refresh now" for the dataset created from the Power BI
-    Desktop file. We will need to set up an "On-premises data gateway
-    for custom connector" for the data refresh to work.
-
-![Graphical user interface, application Description automatically
-generated](./media/onestream-power-bi-custom-connector-user-guide/image21.png)
+* Click on the link to view all reports from the Power BI Desktop in the Power BI Service as well as create dashboards in the Power BI Service.
+![Refresh data model on service](./media/onestream/pbi-publish-access.png)
 
 ## Best Practices and Functions Help
 
@@ -139,18 +125,18 @@ This function retrieves data from a OneStream Cube.
 
 * All the parameters can be specified via OneStream Member Script (e.g. 2023.Base for time), except View and Currency which require a single member.
 * Currency refers to the Consolidation dimension in OneStream, so you can use Local or Aggregate for example.
-![Get Cube](./media/onestream-power-bi-custom-connector-user-guide/image15.png)
+![Get Cube](./media/onestream/os-connector-get-cube.png)
 
 ### Get Custom Adapter
 
 * Specify the Workspace and Adapter Name (mandatory parameters)
 * Table Name and Parameters are optional
 * Refer to a configured dashboard adapter inside OneStreame to make sure you are inserting the right values.
-![Get Adapter](./media/onestream-power-bi-custom-connector-user-guide/image16.png)
+![Get Adapter](./media/onestream/os-connector-get-adapter.png)
 
 ### Get Dimension and Get Member Properties
 
 * Specify the OneStream Dimension Type you want to retrieve.
 * Specify the Scenario Type. Use Default or All to use the selected cube default dimensions and retrieve the default properties.
 * Include Descriptions can be set to True or False.
-![Get Adapter](./media/onestream-power-bi-custom-connector-user-guide/image17.png)
+![Get Adapter](./media/onestream/os-connector-get-dimension.png)
